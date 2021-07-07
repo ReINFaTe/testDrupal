@@ -1,0 +1,14 @@
+uuid: 2528f2ed-fd6c-4640-83de-758b938d049b
+name: test
+mail: test@test
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
