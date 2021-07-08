@@ -1,0 +1,12 @@
+name: Config Auto Export
+type: module
+description: Auto detects config changes and exports those to a configurable directory and optionally triggers a web hook.
+core_version_requirement: ^8.8 || ^9
+package: Configuration
+dependencies:
+  - yaml_editor:yaml_editor
+
+# Information added by Drupal.org packaging script on 2020-11-16
+version: '2.0.1'
+project: 'config_auto_export'
+datestamp: 1605540559

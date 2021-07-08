@@ -1,0 +1,6 @@
+enabled: 1
+directory: 'temporary://cae'
+webhook: ''
+webhook_params: { }
+delay: 60
+delay_from_first: false

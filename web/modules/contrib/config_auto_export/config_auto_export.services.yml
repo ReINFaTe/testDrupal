@@ -1,0 +1,13 @@
+services:
+  config_auto_export.config_subscriber:
+    class: Drupal\config_auto_export\ConfigSubscriber
+    arguments: ['@config.factory', '@config.storage', '@config_auto_export.storage', '@file_system', '@module_handler', '@entity_type.manager', '@state', '@datetime.time', '@config_auto_export.service']
+    tags:
+      - { name: event_subscriber }
+      - { name: needs_destruction }
+  config_auto_export.storage:
+    class: Drupal\Core\Config\FileStorage
+    factory: Drupal\config_auto_export\FileStorageFactory::getSync
+  config_auto_export.service:
+    class: Drupal\config_auto_export\Service
+    arguments: ['@config.factory', '@file_system', '@logger.factory', '@state', '@datetime.time', '@http_client_factory']

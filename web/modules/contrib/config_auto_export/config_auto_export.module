@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function config_auto_export_cron() {
+  Drupal::service('config_auto_export.service')->checkDueDate();
+}
